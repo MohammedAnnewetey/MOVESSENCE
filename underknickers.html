@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovEssence | Under knickers</title>
+
+    <link rel="stylesheet" href="styles/categories-common.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <link rel="stylesheet" href="styles/footer.css"/>
+<link rel="stylesheet" href="styles/mediaqueries.css"/>
+
+
+    <script src="https://kit.fontawesome.com/bc478e4819.js" crossorigin="anonymous"></script>
+
+</head>
+  <body>
+
+
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/banner-image/movessence-baanner-image.jpg" alt="MovEssence Logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="shop.html">Shop</a>
+            <ul class="dropdown-menu">
+              <li><a href="panties.html">Panties</a></li>
+              <li><a href="nighties.html">Nighties / Sleepwears</a></li>
+              <li><a href="loungewear.html">Lounge Wear</a></li>
+              <li><a href="lingerie-duo.html">Lingerie Duo</a></li>
+              <li><a href="camisole.html">Camisole</a></li>
+              <li><a href="underknickers.html">Under Knickers</a></li>
+              <li><a href="leggings.html">Leggings</a></li>
+              <li><a href="brassiere.html">Brassiere</a></li>
+              <li><a href="gymwear.html">Gym Wear</a></li>
+              <li><a href="mensbriefs.html">Men's Briefs</a></li>
+              <li><a href="mensboxers.html">Men's Boxer Shorts</a></li>
+              <li><a href="menssinglet.html">Men's Singlet</a></li>
+            </ul>
+          </li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    
+
+    <section class="category-section">
+      <h1>Under knickers Collection</h1>
+
+      <!-- <h2>Cotton Panties</h2> -->
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/underknickers/black.jpg" alt="Lace Bikini Panty">
+          <h3>Cotton Flowery Delight</h3>
+          <a href="https://wa.link/u4bk4v" class="buy-btn" target="_blank">BUY NOW</a>
+        </div>
+        <div class="product-card">
+          <img src="images/underknickers/cream.jpg" alt="Cotton Comfort Cut">
+          <h3>Cotton Comfort Cut</h3>
+          <a href="https://wa.link/u4bk4v" class="buy-btn" target="_blank">BUY NOW</a>
+        </div>
+        <div class="product-card">
+          <img src="images/underknickers/black2.jpg" alt="Seamless Brief">
+          <h3>Cotton Pink Spice</h3>
+          <a href="https://wa.link/u4bk4v" class="buy-btn" target="_blank">BUY NOW</a>
+        </div>
+        <div class="product-card">
+          <img src="images/underknickers/set.jpg" alt="Luxe Thong">
+          <h3>Cotton Black Mirage</h3>
+          <a href="https://wa.link/u4bk4v" class="buy-btn" target="_blank">BUY NOW</a>
+        </div>
+      </div>
+
+
+      
+      <!-- <h2>Lace Panties</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/panties/lace/lace-white-pant.jpg" alt="Lace Bikini Panty">
+          <h3>Lace White Deception</h3>
+          <a href="https://wa.link/u4bk4v" class="buy-btn" target="_blank">BUY NOW</a>
+        </div>
+        <div class="product-card">
+          <img src="images/panties/lace/lace-set.jpg" alt="Cotton Comfort Cut">
+          <h3>Lace Comfort Cut Set</h3>
+          <a href="https://wa.link/u4bk4v" class="buy-btn" target="_blank">BUY NOW</a>
+        </div>
+        <div class="product-card">
+          <img src="images/panties/lace/lace-white-pant.jpg" alt="Seamless Brief">
+          <h3> Lace White Deception</h3>
+          <a href="https://wa.link/u4bk4v" class="buy-btn" target="_blank">BUY NOW</a>
+        </div>
+        <div class="product-card">
+          <img src="images/panties/lace/lace-set.jpg" alt="Luxe Thong">
+          <h3>Lace Comfort Cut Set</h3>
+          <a href="https://wa.link/u4bk4v" class="buy-btn" target="_blank">BUY NOW</a>
+        </div>
+      </div> -->
+
+
+
+
+    </section>  
+  
+
+
+    
+     <!-- Footer -->
+  <footer class="footer">
+    <div class="newsletter">
+      <h3>Stay Updated</h3>
+      <p>Follow Us for updates, sales & tips.</p>
+      
+    </div>
+    <div class="contact-options">
+      <a href="https://wa.link/u4bk4v" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+     
+      <a href="https://www.facebook.com/share/1624o8jZPb/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+     
+      <a href="https://www.instagram.com/mov_essence?igsh=OWF0dmhyemxodjZj" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+    </div>
+    <p>&copy; 2025 MovEssence. All rights reserved.</p>
+  </footer>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        e.stopPropagation(); // stop click from bubbling up
+
+        // Toggle active class on this dropdown
+        dropdown.classList.toggle('active');
+
+        // Close any other open dropdowns
+        dropdowns.forEach(other => {
+          if (other !== dropdown) {
+            other.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // Close dropdowns if clicking outside any dropdown
+    document.addEventListener('click', () => {
+      dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+    });
+  });
+</script>
+
+
+  </body>
+  </html>
+  

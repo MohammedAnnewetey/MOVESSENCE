@@ -1,0 +1,15 @@
+.heading1{
+  background-color: rgb(45, 2, 63);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.heading1{
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.heading1 span {
+  color: #d63384;
+}

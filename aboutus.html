@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovEssence | About Us</title>
+
+
+  <link rel="stylesheet" href="styles/header.css"/> 
+<link rel="stylesheet" href="styles/footer.css"/>
+<link rel="stylesheet" href="styles/aboutus-homepage.css"/>
+<link rel="stylesheet" href="styles/mediaqueries.css"/>
+
+<script src="https://kit.fontawesome.com/bc478e4819.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- Header -->
+ <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/banner-image/movessence-baanner-image.jpg" alt="MovEssence Logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="shop.html">Shop</a>
+            <ul class="dropdown-menu">
+              <li><a href="panties.html">Panties</a></li>
+              <li><a href="nighties.html">Nighties / Sleepwears</a></li>
+              <li><a href="loungewear.html">Lounge Wear</a></li>
+              <li><a href="lingerie-duo.html">Lingerie Duo</a></li>
+              <li><a href="camisole.html">Camisole</a></li>
+              <li><a href="underknickers.html">Under Knickers</a></li>
+              <li><a href="leggings.html">Leggings</a></li>
+              <li><a href="brassiere.html">Brassiere</a></li>
+              <li><a href="gymwear.html">Gym Wear</a></li>
+              <li><a href="mensbriefs.html">Men's Briefs</a></li>
+              <li><a href="mensboxers.html">Men's Boxer Shorts</a></li>
+              <li><a href="menssinglet.html">Men's Singlet</a></li>
+            </ul>
+          </li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- body -->
+
+  <div class="heading1">
+    <h1>About <span>MovEssence</span></h1>
+  </div>
+
+  <section>
+    <h2>Who We Are: </h2>
+    <p>
+      MovEssence is a passion-born brand inspired by a deep love for lingerie and the bold vision to bring beauty, sensuality, and expression to every unisex wardrobe. We believe in the power of intimate fashion as a form of confidence, self-love, and identity.
+    </p>
+
+    <h2>What We Offer:</h2>
+    <p>
+      We offer carefully curated lingerie pieces, essential fashion edits, and style inspiration for every body. From elegant basics to bold statement wear, our collections are designed to make you feel confident and seen — no matter who you are.
+    </p>
+
+    <h2>Why Choose Us?</h2>
+    <p>
+      At MovEssence, inclusivity meets elegance. We're redefining what intimate fashion looks like by blurring the lines of gender and style — creating pieces that celebrate every curve, every soul, and every identity. If you wear it, it’s for you.
+    </p>
+
+    
+  </section>
+
+
+
+ <!-- Footer -->
+ <footer class="footer">
+  <div class="newsletter">
+    <h3>Stay Updated</h3>
+    <p>Follow Us for updates, sales & tips.</p>
+    
+  </div>
+  <div class="contact-options">
+    <a href="https://wa.link/u4bk4v" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+   
+    <a href="https://www.facebook.com/share/1624o8jZPb/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+   
+    <a href="https://www.instagram.com/mov_essence?igsh=OWF0dmhyemxodjZj" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+  </div>
+  <p>&copy; 2025 MovEssence. All rights reserved.</p>
+</footer>
+
+
+
+ <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        e.stopPropagation(); // stop click from bubbling up
+
+        // Toggle active class on this dropdown
+        dropdown.classList.toggle('active');
+
+        // Close any other open dropdowns
+        dropdowns.forEach(other => {
+          if (other !== dropdown) {
+            other.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // Close dropdowns if clicking outside any dropdown
+    document.addEventListener('click', () => {
+      dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+    });
+  });
+</script>
+
+
+</body>
+</html>

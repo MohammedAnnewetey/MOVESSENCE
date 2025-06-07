@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovEssence | Contact Us</title>
+ 
+ 
+<link rel="stylesheet" href="styles/footer.css"/>
+<link rel="stylesheet" href="styles/contactus-homepage.css"/>
+<link rel="stylesheet" href="styles/header.css"/>
+<link rel="stylesheet" href="styles/mediaqueries.css"/>
+
+
+<script src="https://kit.fontawesome.com/bc478e4819.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- Header -->
+ <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/banner-image/movessence-baanner-image.jpg" alt="MovEssence Logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="shop.html">Shop</a>
+            <ul class="dropdown-menu">
+              <li><a href="panties.html">Panties</a></li>
+              <li><a href="nighties.html">Nighties / Sleepwears</a></li>
+              <li><a href="loungewear.html">Lounge Wear</a></li>
+              <li><a href="lingerie-duo.html">Lingerie Duo</a></li>
+              <li><a href="camisole.html">Camisole</a></li>
+              <li><a href="underknickers.html">Under Knickers</a></li>
+              <li><a href="leggings.html">Leggings</a></li>
+              <li><a href="brassiere.html">Brassiere</a></li>
+              <li><a href="gymwear.html">Gym Wear</a></li>
+              <li><a href="mensbriefs.html">Men's Briefs</a></li>
+              <li><a href="mensboxers.html">Men's Boxer Shorts</a></li>
+              <li><a href="menssinglet.html">Men's Singlet</a></li>
+            </ul>
+          </li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- body -->
+
+  <div class="heading1">
+    <h1>Contact <span>MovEssence</span></h1>
+    <p>We'd love to hear from you</p>
+  </div>
+
+  <section class="contact-section">
+    <p>If you have questions, need help, or want to collab — we're just a message away.</p>
+
+    <div class="contact-options">
+      <a href="https://wa.link/u4bk4v" target="_blank" class="contact-btn whatsapp">Message Us on WhatsApp</a>
+      
+      <a href="mailto:MovEssence@gmail.com?subject=Hello%20MovEssence&body=Hi%20MovEssence%2C%0A%0AI%20would%20love%20to%20connect%20with%20you%20about..." class="contact-btn email">Send Us an Email</a>
+
+
+    </div>
+
+    <div class="contact-note">
+      <p>NB: We usually respond within a few hours.</p>
+    </div>
+  </section>
+
+
+ <!-- Footer -->
+ <footer class="footer">
+  <div class="newsletter">
+    <h3>Stay Updated</h3>
+    <p>Follow Us for updates, sales & tips.</p>
+    
+  </div>
+  <div class="contact-options">
+    <a href="https://wa.link/u4bk4v" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+   
+    <a href="https://www.facebook.com/share/1624o8jZPb/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+   
+    <a href="https://www.instagram.com/mov_essence?igsh=OWF0dmhyemxodjZj" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+  </div>
+  <p>&copy; 2025 MovEssence. All rights reserved.</p>
+</footer>
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', (e) => {
+        e.stopPropagation(); // stop click from bubbling up
+
+        // Toggle active class on this dropdown
+        dropdown.classList.toggle('active');
+
+        // Close any other open dropdowns
+        dropdowns.forEach(other => {
+          if (other !== dropdown) {
+            other.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // Close dropdowns if clicking outside any dropdown
+    document.addEventListener('click', () => {
+      dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+    });
+  });
+</script>
+ 
+
+
+</body>
+</html>

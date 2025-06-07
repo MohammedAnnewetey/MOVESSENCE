@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f5;
+    color: #3d2a33;
+    /* line-height: 1.6; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .heading1{
+    background-color: rgb(45, 2, 63);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .heading1{
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .heading1 span {
+    color: #d63384;
+  }
+  
+  header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #fcd2e5;
+  }
+  
+  .contact-section {
+    padding: 60px 30px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .contact-btn {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 32px;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-btn.whatsapp {
+    background-color: #25d366;
+  }
+  
+  .contact-btn.whatsapp:hover {
+    background-color: #1ba655;
+  }
+  
+  .contact-btn.email {
+    background-color: #d63384;
+  }
+  
+  .contact-btn.email:hover {
+    background-color: #b72e70;
+  }
+  
+  .contact-note {
+    margin-top: 30px;
+    font-style: italic;
+    color: #6d4c5b;
+  }
+  
+ 
+  
